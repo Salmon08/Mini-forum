@@ -1,10 +1,13 @@
 <template>
   <div class="px-6 py-10 max-w-2xl mx-auto">
+
+
     <!-- Heading -->
-    <div class="mb-8">
+    <div class="mb-3 flex flex-row justify-between">
       <h2 class="text-3xl font-extrabold text-gray-800 mb-2">Ask a New Question</h2>
-      <p class="text-gray-500">Share your question clearly to get better answers from the community.</p>
+      <button @click="$inertia.visit(route('questions.index'))" class="text-blue-500 hover:underline ">Back</button>
     </div>
+    <p class="text-gray-500 mb-3">Share your question clearly to get better answers from the community.</p>
 
     <!-- Form Card -->
     <form
